@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Nagar-AI Dashboard</title>
+<link rel="stylesheet" href="css/style.css">
+</head>
+
+<body class="dark">
+
+<header class="topbar">
+  <h2>Citizen Dashboard</h2>
+  <a href="admin.html" class="btn">Authority View</a>
+</header>
+
+<section class="dashboard">
+
+<div class="form-card">
+  <h3>Report an Issue</h3>
+
+  <input type="text" id="location" placeholder="Location">
+  <select id="category">
+    <option>Garbage</option>
+    <option>Pothole</option>
+    <option>Streetlight</option>
+    <option>Water Leakage</option>
+  </select>
+
+  <textarea id="desc" placeholder="Describe the issue"></textarea>
+  <button onclick="submitIssue()">Submit Complaint</button>
+</div>
+
+<div class="issues">
+  <h3>Reported Issues</h3>
+  <div id="issueList"></div>
+</div>
+
+</section>
+
+<script src="js/dashboard.js"></script>
+</body>
+</html>
