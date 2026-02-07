@@ -1,24 +1,33 @@
-* { box-sizing: border-box; font-family: 'Inter', sans-serif; }
+* {
+  box-sizing: border-box;
+  font-family: 'Inter', sans-serif;
+}
 
 body {
   margin: 0;
   background: #0f172a;
-  color: #fff;
+  color: #ffffff;
+}
+
+a {
+  color: white;
+  text-decoration: none;
 }
 
 .navbar {
-  display: flex;
-  justify-content: space-between;
-  padding: 20px 60px;
   position: fixed;
   width: 100%;
+  padding: 20px 60px;
+  display: flex;
+  justify-content: space-between;
   background: rgba(0,0,0,0.4);
-  backdrop-filter: blur(12px);
+  backdrop-filter: blur(10px);
 }
 
-.logo { font-weight: 800; font-size: 24px; }
-
-a { color: #fff; text-decoration: none; margin-left: 20px; }
+.logo {
+  font-weight: 800;
+  font-size: 22px;
+}
 
 .btn {
   padding: 10px 20px;
@@ -26,19 +35,32 @@ a { color: #fff; text-decoration: none; margin-left: 20px; }
   border-radius: 30px;
 }
 
+.large {
+  font-size: 18px;
+}
+
 .hero {
   height: 100vh;
+  padding: 80px;
   display: flex;
   flex-direction: column;
   justify-content: center;
-  padding: 0 80px;
 }
 
-.hero h1 { font-size: 64px; }
-.hero span { color: #22d3ee; }
+.hero h1 {
+  font-size: 64px;
+}
+
+.hero span {
+  color: #22d3ee;
+}
 
 .section {
   padding: 100px 80px;
+}
+
+.gradient {
+  background: linear-gradient(135deg,#020617,#1e293b);
 }
 
 .cards {
@@ -53,11 +75,29 @@ a { color: #fff; text-decoration: none; margin-left: 20px; }
   flex: 1;
 }
 
+.features li {
+  margin: 12px 0;
+}
+
+footer {
+  padding: 40px;
+  text-align: center;
+  opacity: 0.7;
+}
+
+/* DASHBOARD */
+
+.topbar {
+  padding: 30px 60px;
+  display: flex;
+  justify-content: space-between;
+}
+
 .dashboard {
   display: grid;
   grid-template-columns: 1fr 2fr;
   gap: 30px;
-  padding: 80px;
+  padding: 60px;
 }
 
 .form-card, .issues {
@@ -66,12 +106,19 @@ a { color: #fff; text-decoration: none; margin-left: 20px; }
   border-radius: 16px;
 }
 
-input, textarea, select {
+input, select, textarea, button {
   width: 100%;
-  margin-bottom: 12px;
   padding: 10px;
+  margin-bottom: 12px;
   border-radius: 8px;
   border: none;
+}
+
+button {
+  background: linear-gradient(135deg,#22d3ee,#6366f1);
+  color: black;
+  font-weight: 600;
+  cursor: pointer;
 }
 
 .issue {
